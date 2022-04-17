@@ -1,0 +1,36 @@
+{
+    "name": "elmsellem/laravel-bitly",
+    "description": "Laravel package for generating bitly short urls",
+    "type": "library",
+    "keywords": ["laravel", "bitly", "package", "short", "url", "link"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/Elmsellem/laravel-bitly/issues",
+        "source": "https://github.com/Elmsellem/laravel-bitly"
+    },
+    "authors": [
+        {
+            "name": "Mohammed El Msellem",
+            "email": "elmsellem102@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Elmsellem\\Bitly\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elmsellem\\Bitly\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "Elmsellem\\Bitly\\Facade\\Bitly"
+            }
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "illuminate/http": "^7.0 || ^8.0 || ^9.0"
+    }
+}
